@@ -7,13 +7,10 @@ try:
     n=int(input('Enter the number n: '))
     x=collatz(n)
     while True:
-        if x==1:
-            print(x)
-            break
-        else:
-            print(x)
-            x=collatz(x)
+    	if x!=1:
+        	print(x)
+        	x=collatz(x)
         
 except ValueError:
     print('Enter a number except 0: ')
-
+print(x)
